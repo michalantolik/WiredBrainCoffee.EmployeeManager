@@ -1,0 +1,10 @@
+Hi Blazor developer,
+
+Before running this project, please ensure that you applied the database migrations to your local db.
+
+To do this, open the Package Manager Console in Visual Studio and run the Update-Database command.
+
+Thank you,
+Thomas Claudius Huber 
+> www.thomasclaudiushuber.com
+> @thomasclaudiush
