@@ -44,4 +44,11 @@ This repo uses given demo application to test .NET Blazor Server Webapp deployme
    <br>👉 **Save connection string value in:** Azure App Settings
    <br>👉 Copy **Connection string value** by pressing copy icon on the right
 8. Next 👉 Finish 👉 wait until completed 👉 Close
-9. Make sure that Azure SQL Database is marked as "Connected" with green checkmark
+9. Make sure that Azure SQL Database is marked as **Connected** with green checkmark
+
+## Apply database migrations to Azure SQL Database
+1. Open appsettings.json
+2. Copy/paste line with EmployeeManagerDbContext connection string (have two same lines)
+3. Comment out one of them.
+4. Change the seconde one: paste connection string to Azure SQL DB as copied in step #7
+5. Open Package Manager Console 👉  Update-Database
