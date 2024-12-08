@@ -74,3 +74,6 @@ This repo uses given demo application to test .NET Blazor Server Webapp deployme
 2. Wait until application gets published
 3. Browser will open the app automatically 👉 app (webstie) will be empty
 4. VS will say "Warming up your site..." 👉 then VS will say "Publish succeeded on ..."
+5. Wait a couple of mintes more...
+6. Open Azure portal 👉 Open "WiredBrainCoffeeEmployeeManager-APP" 👉 Browse
+7. Web browser will be open 👉 web application will be displayed
