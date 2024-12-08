@@ -10,10 +10,14 @@ This repo uses given demo application to test .NET Blazor Server Webapp deployme
 1. Right-click project in VS 👉 Publish 👉 Azure 👉 Next 👉 Azure App Service (Linux) 👉 Next
 2. Sign-in to your Microsoft subscription (if not yet) 👉 select your Azure subscription
 3. Create new (App Service instance)
-4. Set: Name, Subscription, Resource Group, Hosting Plan (e.g. S1 or S2) 👉 Create
-5. Wait until App Service instance gets created.
-6. Select created App Service instance 👉 Finish 👉 Close
-7. In the Publish dialog set the following settings and close the dialog:
+4. Set the following App Service settings:
+   <br>👉 **Name:** WiredBrainCoffeeEmployeeManager-APP
+   <br>👉 **Subscription name:** as selected (yours)
+   <br>👉 **Resource group:** Pluralsight-RG
+   <br>👉 **Hosting Plan:** WiredBrainCoffeeEmployeeManager-ASP, Poland Central, S1
+6. Create 👉 wait until App Service instance gets created
+7. Select created App Service instance 👉 Finish 👉 Close
+8. In the Publish dialog set the following settings and 👉 Save
    <br>👉 **Configuration:** Release
    <br>👉 **Target Framework:** net8.0
    <br>👉 **Deployment Mode:** Self-contained
