@@ -50,6 +50,14 @@ This repo uses given demo application to test .NET Blazor Server Webapp deployme
 8. Next 👉 Finish 👉 wait until completed 👉 Close
 9. Make sure that Azure SQL Database is marked as **Connected** with green checkmark
 
+## Check Access to Azure SQL Database
+1. Open Azure portal 👉 Open "WiredBrainCoffeeEmployeeManager-SQLDB" 👉 Query editor (preview)
+2. Try to login using credentials given in step #5 👉 you should get error
+   <br>👉 Cannot open server 'employeemanager-sql' requested by the login. Client with IP address 'xx.xx.x.xxx' is not allowed to access the server
+4.  Overview 👉 Set server firewall 👉 Firewall rules 👉 Add your client IPv2 address (xx.xx.x.xxx) 👉 Save
+5.  Open "WiredBrainCoffeeEmployeeManager-SQLDB" 👉 Query editor (preview)
+6.  2. Login using credentials given in step #5 👉 it should work this time
+
 ## Apply database migrations to Azure SQL Database
 1. Open appsettings.json
 2. Copy/paste line with EmployeeManagerDbContext connection string (have two same lines)
