@@ -68,3 +68,9 @@ This repo uses given demo application to test .NET Blazor Server Webapp deployme
 8. Open Package Manager Console 👉  Update-Database
 9. Open Azure portal 👉 Open "WiredBrainCoffeeEmployeeManager-SQLDB" 👉 Query editor (preview)
 10. Login using your sql server credentials 👉 Tables 👉 Department and Employee tables should be there (migation was applied) 
+
+## Publish the Application
+1. Right-click project in VS 👉 Publish 👉 Publish button
+2. Wait until application gets published
+3. Browser will open the app automatically 👉 app (webstie) will be empty
+4. VS will say "Warming up your site..." 👉 then VS will say "Publish succeeded on ..."
