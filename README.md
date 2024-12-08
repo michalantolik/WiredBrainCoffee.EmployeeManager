@@ -14,7 +14,7 @@ This repo uses given demo application to test .NET Blazor Server Webapp deployme
    <br>👉 **Name:** WiredBrainCoffeeEmployeeManager-APP
    <br>👉 **Subscription name:** as selected (yours)
    <br>👉 **Resource group:** Pluralsight-RG
-   <br>👉 **Hosting Plan:** WiredBrainCoffeeEmployeeManager-ASP, Poland Central, S1
+   <br>👉 **Hosting Plan:** WiredBrainCoffeeEmployeeManager-ASP, Canada Central, S1
 6. Create 👉 wait until App Service instance gets created
 7. Select created App Service instance 👉 Finish 👉 Close
 8. In the Publish dialog set the following settings and 👉 Save
@@ -29,19 +29,19 @@ This repo uses given demo application to test .NET Blazor Server Webapp deployme
 1. Right-click project in VS 👉 Publish 👉 Make sure it says "Ready to publish".
 2. Scroll down 👉 notice that there is a serive dependecy 👉 SQL Server DB 👉 this has to be created first
 3. Press "..." on the right 👉 Connect 👉 Azure SQL Database 👉 Next
-4. Sign-in to your Microsoft subscription (if not yet) 👉 select your Azure subscription 👉 Create
+4. Sign-in to your Microsoft subscription (if not yet) 👉 select your Azure subscription 👉 Create new (Azure SQL Database)
 5. In the dialog set the following settings:
-   <br>👉 **Database name:** EmployeeManagerDb
+   <br>👉 **Database name:** WiredBrainCoffeeEmployeeManager-SQLDB
    <br>👉 **Subscription name:** as selected (yours)
-   <br>👉 **Resource group:** Pluralsight_RG
+   <br>👉 **Resource group:** Pluralsight-RG
    <br>👉 Database server 👉 New ...
-   <br>👉 **Database server name:** employeemanagerdbserver
-   <br>👉 **Location:** Germany West Central
+   <br>👉 **Database server name:** employeemanager-sql
+   <br>👉 **Location:** Canada Central
    <br>👉 **Administrator username:** ...
    <br>👉 **Administrator password:** ...
    <br>👉 OK 👉 Create
 6. Wait until Azure SQL Database instance gets created 👉 Next
-7. Provide connection string name and specify how to save it
+7. Provide connection string name and specify how to save it 👉 Azure App Settings
    <br>👉 **Database connection string name:** ConnectionStrings:EmployeeManagerDbContext
    <br>👉 **Database connection user name:** as set in step #5
    <br>👉 **Database connection password:** as set in step #5
