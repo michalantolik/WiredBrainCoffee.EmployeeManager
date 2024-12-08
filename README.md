@@ -46,7 +46,6 @@ This repo uses given demo application to test .NET Blazor Server Webapp deployme
    <br>👉 **Database connection user name:** as set in step #5
    <br>👉 **Database connection password:** as set in step #5
    <br>👉 **Save connection string value in:** Azure App Settings
-   <br>👉 Copy **Connection string value** by pressing copy icon on the right
 8. Next 👉 Finish 👉 wait until completed 👉 Close
 9. Make sure that Azure SQL Database is marked as **Connected** with green checkmark
 
@@ -59,8 +58,13 @@ This repo uses given demo application to test .NET Blazor Server Webapp deployme
 6.  2. Login using credentials given in step #5 👉 it should work this time
 
 ## Apply database migrations to Azure SQL Database
-1. Open appsettings.json
-2. Copy/paste line with EmployeeManagerDbContext connection string (have two same lines)
-3. Comment out one of them.
-4. Change the seconde one: paste connection string to Azure SQL DB as copied in step #7
-5. Open Package Manager Console 👉  Update-Database
+1. Open Azure portal 👉 Open "WiredBrainCoffeeEmployeeManager-SQLDB" 👉 See connection strings
+2. Copy "ADO.NET (SQL authentication)" connection string
+3. Open appsettings.json
+4. Copy/paste line with EmployeeManagerDbContext connection string (have two same lines)
+5. Comment out one of them.
+6. Change the seconde one: paste connection string to Azure SQL DB as copied in step #2
+7. Replace {your_password} in connection string with the actual password.
+8. Open Package Manager Console 👉  Update-Database
+9. Open Azure portal 👉 Open "WiredBrainCoffeeEmployeeManager-SQLDB" 👉 Query editor (preview)
+10. Login using your sql server credentials 👉 Tables 👉 Department and Employee tables should be there (migation was applied) 
