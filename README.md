@@ -1,12 +1,22 @@
 # .NET Blazor Server Webapp deployment demo
-- **Author**:	Thomas Claudius Huber
-- **Source code**: https://app.pluralsight.com/library/courses/blazor-server-application-ef-core-building-data-driven/
+
+## Deployed application
+
+https://wiredbraincoffeeemployeemanager-app.azurewebsites.net/
+
+## This repository description
 
 This repo uses given demo application to test .NET Blazor Server Webapp deployment.
 
-# Deploy to Azure
+Source code of the demo application can be found here:
 
-## Create Azure App Service
+https://app.pluralsight.com/library/courses/blazor-server-application-ef-core-building-data-driven/
+
+... *by Thomas Claudius Huber*
+
+## Deploy to Azure
+
+### Create Azure App Service
 1. Right-click project in VS 👉 Publish 👉 Azure 👉 Next 👉 Azure App Service (Linux) 👉 Next
 2. Sign-in to your Microsoft subscription (if not yet) 👉 select your Azure subscription
 3. Create new (App Service instance)
@@ -25,7 +35,7 @@ This repo uses given demo application to test .NET Blazor Server Webapp deployme
 9. Right-click project in VS 👉 Publish 👉 Make sure it says "Ready to publish".
 10. Scroll down 👉 notice that there is a serive dependecy 👉 SQL Server DB 👉 this has to be created first
 
-## Setup Azure SQL Database
+### Setup Azure SQL Database
 1. Right-click project in VS 👉 Publish 👉 Make sure it says "Ready to publish".
 2. Scroll down 👉 notice that there is a serive dependecy 👉 SQL Server DB 👉 this has to be created first
 3. Press "..." on the right 👉 Connect 👉 Azure SQL Database 👉 Next
@@ -49,7 +59,7 @@ This repo uses given demo application to test .NET Blazor Server Webapp deployme
 8. Next 👉 Finish 👉 wait until completed 👉 Close
 9. Make sure that Azure SQL Database is marked as **Connected** with green checkmark
 
-## Check Access to Azure SQL Database
+### Check Access to Azure SQL Database
 1. Open Azure portal 👉 Open "WiredBrainCoffeeEmployeeManager-SQLDB" 👉 Query editor (preview)
 2. Try to login using credentials given in step #5 👉 you should get error
    <br>👉 Cannot open server 'employeemanager-sql' requested by the login. Client with IP address 'xx.xx.x.xxx' is not allowed to access the server
@@ -57,7 +67,7 @@ This repo uses given demo application to test .NET Blazor Server Webapp deployme
 5.  Open "WiredBrainCoffeeEmployeeManager-SQLDB" 👉 Query editor (preview)
 6.  2. Login using credentials given in step #5 👉 it should work this time
 
-## Apply database migrations to Azure SQL Database
+### Apply database migrations to Azure SQL Database
 1. Open Azure portal 👉 Open "WiredBrainCoffeeEmployeeManager-SQLDB" 👉 See connection strings
 2. Copy "ADO.NET (SQL authentication)" connection string
 3. Open appsettings.json
