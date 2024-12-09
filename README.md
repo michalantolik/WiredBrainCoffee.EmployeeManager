@@ -2,7 +2,11 @@
 
 ## Deployed application
 
-https://wiredbraincoffeeemployeemanager-app.azurewebsites.net/
+Application has been deployed to Azure 👉 *Azure App Service + Azure SQL Database*
+
+You can access and use depoloyed application from this URL:
+
+- https://wiredbraincoffeeemployeemanager-app.azurewebsites.net/
 
 ## This repository description
 
@@ -10,7 +14,7 @@ This repo uses given demo application to test .NET Blazor Server Webapp deployme
 
 Source code of the demo application can be found here:
 
-https://app.pluralsight.com/library/courses/blazor-server-application-ef-core-building-data-driven/
+- https://app.pluralsight.com/library/courses/blazor-server-application-ef-core-building-data-driven/
 
 ... *by Thomas Claudius Huber*
 
@@ -79,7 +83,7 @@ https://app.pluralsight.com/library/courses/blazor-server-application-ef-core-bu
 9. Open Azure portal 👉 Open "WiredBrainCoffeeEmployeeManager-SQLDB" 👉 Query editor (preview)
 10. Login using your sql server credentials 👉 Tables 👉 Department and Employee tables should be there (migation was applied) 
 
-## Publish the Application
+### Publish the Application
 1. Right-click project in VS 👉 Publish 👉 Publish button
 2. Wait until application gets published
 3. Browser will open the app automatically 👉 app (webstie) will be empty
